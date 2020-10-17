@@ -1,0 +1,5 @@
+[sshd]
+enabled = true
+port = 3113
+[nginx-http-auth]
+enabled = true
