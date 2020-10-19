@@ -1,10 +1,11 @@
 # Create-A-Vhost!
- Simple script that will deploy a virtual host on ubuntu
+Simple script that will download installation and run configurations for a virtual host on Ubuntu.
 
 
 ## Instructions
 Start of with adding a new A record for the host at your host provider.
-SSH into your server (ubuntu) 
+SSH into your server (ubuntu)
+ 
 Tested on Ubuntu 20.04, Digital Ocean (Droplet) & AWS (Ec2)
 
 
@@ -27,8 +28,9 @@ sudo ./install.sh
 ```
 
 ### Multiple Virtual Hosts
-If multiple host wants to be created, don't forget to change the NGINX_HOST variable's value in .env file for a new Virtual Host to be created and then run 
-``` bash sudo ./config```
+If multiple host wants to be created, don't forget to change the NGINX_HOST variable's value in .env file for a new Virtual Host to be created and then run
+ 
+```sudo ./config```
 
 
 ## AWS (EC2)
