@@ -4,21 +4,24 @@
 
 ## Instructions
 Start of with adding a new A record for the host at your host provider.
-In your server (ubuntu) 
+SSH into your server (ubuntu) 
+Tested on Ubuntu 20.04, Digital Ocean (Droplet) & AWS (Ec2)
+
+
 
 ```bash
-use git clone https://github.com/xhika/deployVH.git
+git clone https://github.com/xhika/Create-A-Vhost.git
 ```
 
 ### Terminal
 ```bash
 cd into folder
 
-chmod +w+r+x install.sh
-chmod +w+r+x config.sh
-
 !! Before running the script make sure to 
 edit the NGINX_HOST value to your desired host name !!
+
+chmod +w+r+x install.sh
+chmod +w+r+x config.sh
 
 sudo ./install.sh
 ```
@@ -39,9 +42,15 @@ select source to be 0.0.0.0/0
 as the first ssh is on default.
 5. Save rules!
 ```
+## Digital Ocean (Droplet)
+```
+Just SSH into your droplet and follow the steps in this readme.
+```
+
 
 ## Troubleshooting
-- If any troubles occur, make sure ports 80,443 are available.
+- If any troubles occur, make sure ports 80 & 443 are available.
 - If certbot fails, make sure envsubst have replaced variables correctly check in /etc/nginx/sites-enabled/{your_host_name}
+
 
 
